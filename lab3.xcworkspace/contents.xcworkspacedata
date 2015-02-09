@@ -3,6 +3,10 @@
    version = "1.0">
    <Group
       location = "container:"
+      name = "part4">
+   </Group>
+   <Group
+      location = "container:"
       name = "part3">
       <FileRef
          location = "group:part3/BankAccount.cpp">
