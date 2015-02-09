@@ -21,7 +21,6 @@ public:
 private:
 	int numberOfMonths;
 	int numOfCannons;
-	
 };
 
 
