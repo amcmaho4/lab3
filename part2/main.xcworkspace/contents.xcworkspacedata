@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Makefile">
+   </FileRef>
+   <FileRef
+      location = "group:OvernightPackage.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:OvernightPackage.h">
+   </FileRef>
+   <FileRef
+      location = "group:Package.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:Package.h">
+   </FileRef>
+   <FileRef
+      location = "group:TwoDayPackage.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:TwoDayPackage.h">
+   </FileRef>
+   <FileRef
+      location = "group:main.cpp">
+   </FileRef>
+</Workspace>
