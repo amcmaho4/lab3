@@ -8,6 +8,7 @@
 #ifndef TWODAYPACKAGE_H
 #define TWODAYPACKAGE_H// only include once
 
+#include <iostream>
 using namespace std;
 #include "Package.h" //include the base class
 

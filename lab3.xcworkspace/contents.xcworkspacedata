@@ -4,6 +4,27 @@
    <Group
       location = "container:"
       name = "part4">
+      <FileRef
+         location = "group:part4/main.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:part4/OvernightPackage.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:part4/OvernightPackage.h">
+      </FileRef>
+      <FileRef
+         location = "group:part4/Package.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:part4/Package.h">
+      </FileRef>
+      <FileRef
+         location = "group:part4/TwoDayPackage.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:part4/TwoDayPackage.h">
+      </FileRef>
    </Group>
    <Group
       location = "container:"

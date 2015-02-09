@@ -8,6 +8,8 @@
 #ifndef OVERNIGHTPACKAGE_H //header is only included once
 #define OVERNIGHTPACKAGE_H
 #include "Package.h" //include the base class
+#include <iostream>
+using namespace std;
 
 class OvernightPackage: public Package{ 
 //OvernightPackage is a derived class from Package

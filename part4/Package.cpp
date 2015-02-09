@@ -7,6 +7,7 @@
 //
 
 #include "Package.h" //include interface
+#include <iostream>
 using namespace std;
 #include <string> //include string class
 

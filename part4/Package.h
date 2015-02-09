@@ -7,8 +7,9 @@
 //
 #ifndef PACKAGE_H //include header class once
 #define PACKAGE_H
-using namespace std;
 #include <string> //include the string class
+#include <iostream>
+using namespace std;
 
 class Package{
  public:
