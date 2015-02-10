@@ -7,6 +7,7 @@
 //
 #ifndef PACKAGE_H //include header class once
 #define PACKAGE_H
+
 #include <string> //include the string class
 #include <iostream>
 using namespace std;
@@ -14,7 +15,9 @@ using namespace std;
 class Package{
  public:
 	Package(); //defualt constructor
-        double calculateCost(double); //returns cost : cost per ounce * weight
+	virtual double calculateCost(); //returns cost : cost per ounce * weight
+	virtual void print();
+	double getWeight();
  private:
 	string sender_Name; //name of sender
 	string sender_Address;//address of sender

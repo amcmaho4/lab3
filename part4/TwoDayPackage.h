@@ -15,7 +15,8 @@ using namespace std;
 class TwoDayPackage: public Package{//inherits from base class
  public:
 	TwoDayPackage();//non default constructor
-	double calculateCost(); //adding additional cost
+	virtual double calculateCost(); //adding additional cost
+	virtual void print();
  private:
 	double additCost; //additional cost
 

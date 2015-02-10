@@ -18,7 +18,16 @@ Package::Package(){//non default constructor
 } 
 //rubric says to ensure weight and cost are not negative?
 
-double Package:: calculateCost(double extra){ //calculating cost
-	return ( (weight) * (costPerOunce+extra) ); //if extra cost per ounce
+double Package:: calculateCost(){ //calculating cost
+	return ( (weight) * costPerOunce ); //if extra cost per ounce
 //"extra" will be needed for Overnight Package class
 }// Calculate cost function
+
+double Package::getWeight(){
+	return weight;
+	
+}
+
+void Package::print(){
+	
+}

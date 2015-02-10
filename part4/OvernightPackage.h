@@ -15,7 +15,8 @@ class OvernightPackage: public Package{
 //OvernightPackage is a derived class from Package
  public:
 	OvernightPackage(); //default constructor 
-	double calculateCost(); //calculate package cost
+	virtual double calculateCost(); //calculate package cost
+	virtual void print();
  private:
 	double extraCostPerOunce; //extra cost per ounce 
 };
