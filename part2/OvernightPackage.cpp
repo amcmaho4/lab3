@@ -16,5 +16,5 @@ double OvernightPackage:: calculateCost(){
 //calculate cost function adds additional cost to cost per ounce to calculate 
 //total shipping cost, passes extra cost to the base class function
 
-	return( Package::calculateCost(extraCostPerOunce) );
+	return( Package::calculateCost()+ extraCostPerOunce*(Package::getWeight()) );
 }

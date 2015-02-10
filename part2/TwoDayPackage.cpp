@@ -15,5 +15,5 @@ TwoDayPackage:: TwoDayPackage(){ //default constructor
 
 double TwoDayPackage:: calculateCost() {
 	// Package::CalculateCost calls base class calc cost function
-	return ( (Package::calculateCost(0)) + additCost); //adding set value
+	return ( (Package::calculateCost()) + additCost); //adding set value
 } //specific calculate cost function
