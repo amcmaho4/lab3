@@ -7,6 +7,8 @@
 //
 #include "TwoDayPackage.h" //include both header files
 #include "Package.h"
+#include <iostream>
+using namespace std;
 
 TwoDayPackage:: TwoDayPackage(){ //default constructor
 	additCost = 5; //additional cost of 5 dollars
@@ -15,5 +17,12 @@ TwoDayPackage:: TwoDayPackage(){ //default constructor
 
 double TwoDayPackage:: calculateCost() {
 	// Package::CalculateCost calls base class calc cost function
-	return ( (Package::calculateCost(0)) + additCost); //adding set value
+	return ( (Package::calculateCost()) + additCost); //adding set value
 } //specific calculate cost function
+
+
+void TwoDayPackage::print(){
+	cout << "the additional cost of for twoday shipping is: "<< additCost<<endl;
+	cout << "The cost of shipping a two day package is: "<< calculateCost() <<endl;
+	cout<<endl;
+}

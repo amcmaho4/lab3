@@ -17,37 +17,29 @@ using namespace std;
 
 int main(){
 	vector <Package*> packageVector;
- TwoDayPackage twoDay; //instantiate a two day package
- OvernightPackage overNight; //instantiate an overnight package
+ TwoDayPackage twoDay, twoDay2, twoDay3; //instantiate a two day package
+ OvernightPackage overNight, overNight2, overNight3; //instantiate an overnight package
 
 	
 	// add three values to the end of the vector
 	packageVector.push_back(&twoDay);
+	packageVector.push_back(&twoDay2);
+	packageVector.push_back(&twoDay3);
+
 	packageVector.push_back(&overNight);
+	packageVector.push_back(&overNight2);
+	packageVector.push_back(&overNight3);
 	
-	// display current size and capacity of vector
-	cout << "Current size of vector: " << packageVector.size() << endl;
-	cout << "Current capacity of vector: " << packageVector.capacity() << endl;
 	
 	vector<Package*>::const_iterator i;
+	double totalPackageCost=0;
+	for (i=packageVector.begin(); i != packageVector.end(); ++i){
+		(*i)->print();
+		totalPackageCost+=(*i)->calculateCost();
+	}
 	
-	for (i=packageVector.begin(); i != packageVector.end(); ++i)
-		cout << "  ";
-	cout << endl;
-
+	cout <<"the cost of your" <<packageVector.size()<< " packages is: "<<totalPackageCost<<" "<< endl;
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
- cout << "The cost of shipping a two day package is: "<< twoDay.calculateCost() <<endl;
- 
- cout << "The cost of shipping an overnight package is: "<< overNight.calculateCost()<< endl;
 
  return 0; //function worked correctly
 }
