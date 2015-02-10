@@ -13,8 +13,9 @@ using namespace std;
 class Package{
  public:
 	Package(); //defualt constructor
-        double calculateCost(double); //returns cost : cost per ounce * weight
- private:
+        double calculateCost(); //returns cost : cost per ounce * weight
+ 	double getWeight(); //returns weight
+private:
 	string sender_Name; //name of sender
 	string sender_Address;//address of sender
         int sender_Zip; //sender zip code

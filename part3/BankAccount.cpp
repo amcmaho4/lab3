@@ -16,3 +16,7 @@ BankAccount::BankAccount(){ //constructor
 	password= "myPass"; //default values for bank account 
 
 }
+
+string BankAccount:: getName(){//returns bank account name
+	return name;
+}

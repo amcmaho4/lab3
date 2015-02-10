@@ -19,5 +19,5 @@ creditCard::creditCard(){ //constructor
 void creditCard::print(){ //print data members
 	cout<< "your credit card number is: "<< creditCardNumber <<endl;
 	cout<< "your amount due is: "<< amountDue<<endl;
-
+	cout<< "your bank account name is: " << myBank.getName() <<endl;
 }
