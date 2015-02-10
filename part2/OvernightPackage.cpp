@@ -13,7 +13,7 @@ OvernightPackage::OvernightPackage(){ //initialized with specific values
 }
 
 //non default constructor
-OvernightPackage::OvernightPackage(double cost, double weight, double extra) : Package(cost,weight){
+OvernightPackage::OvernightPackage(double weight, double cost, double extra) : Package(weight,cost){
 	extraCostPerOunce = extra;
 }
 

@@ -13,8 +13,8 @@ using namespace std;
 #include "OvernightPackage.h"
 
 int main(){
- TwoDayPackage twoDay(.05,100,2); //instantiate a two day package
- OvernightPackage overNight(.05,100,.05); //instantiate an overnight package
+ TwoDayPackage twoDay(-100,0.05,2); //instantiate a two day package
+ OvernightPackage overNight(100,.05,.05); //instantiate an overnight package
 
  cout << "The cost of shipping a two day package is: "<< twoDay.calculateCost() <<endl;
  

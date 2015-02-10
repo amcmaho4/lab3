@@ -8,7 +8,7 @@
 #include "TwoDayPackage.h" //include both header files
 #include "Package.h"
 
-TwoDayPackage:: TwoDayPackage(double cost, double weight, double addit) : Package(cost, weight) { // calling the constructor for Package
+TwoDayPackage:: TwoDayPackage(double weight, double cost, double addit) : Package(weight,cost) { // calling the constructor for Package
 	additCost = addit; //non default value
 
 }
