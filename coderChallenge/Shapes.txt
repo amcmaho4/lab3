@@ -1,4 +1,49 @@
 Coding challenge: shapes
 
 Shape: base class
-derived classes from Shape: Two Dimensional and Three-dimensional
+Shape derived classes:
+ -Two Dimensional
+ - Three-dimensional
+
+Two Dimensional derived classes:
+ - Triangle
+	derived classes:
+		-Equilateral
+		-Isosceles
+		-Scalene
+		-Right
+		-Acute
+		-Obtuse
+ - Quadrilaterals
+	derived classes:
+		-Parallelogram
+			derived classes:
+				-Rectangle
+					derived classes:
+						-Square
+				-Rhombus
+		-Trapezoid
+		-Trapezium
+		-Kite
+ - Pentagon
+ - Hexagon
+ - Octagon
+ - Decagon
+
+Three Dimensional derived classes:
+ - Tetrahedron
+ - Square Pyramid
+ - Hexagonal Pyramid
+ - Triangular prism
+ - Cuboid
+	derived class: 
+		-Cube
+ - Octahedron
+ - Petagonal Prism
+ - Hexagonal Prism
+ - Dodecahedron	
+ - Sphere
+ - Ellipsoid
+ - Cone
+ - Cylinder
+ - Icosahedron
