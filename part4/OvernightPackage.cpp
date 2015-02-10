@@ -13,6 +13,12 @@ using namespace std;
 OvernightPackage::OvernightPackage(){ //initialized with specific values
 	extraCostPerOunce = 0.05; //extra fee for overnight package
 }
+//non default constructor
+OvernightPackage::OvernightPackage(double cost, double weight, double extra) : Package(cost,weight){
+	extraCostPerOunce = extra;
+}
+
+
 double OvernightPackage:: calculateCost(){
 //calculate cost function adds additional cost to cost per ounce to calculate 
 //total shipping cost, passes extra cost to the base class function
@@ -20,8 +26,7 @@ double OvernightPackage:: calculateCost(){
 	return( Package::calculateCost()+ extraCostPerOunce*(Package::getWeight()) );
 }
 void OvernightPackage::print(){
-	cout<< "the extra cost per ounce for overnight shipping is: "<< extraCostPerOunce<<endl;
-	cout << "The cost of shipping an overnight package is: "<< calculateCost() <<endl;
+	cout << "Type: overnight"<<endl<<"weight: "<< Package::getWeight()<<endl<<"cost: "<<calculateCost() <<endl;
 	cout<< endl;
 	
 }

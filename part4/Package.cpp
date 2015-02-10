@@ -15,8 +15,20 @@ Package::Package(){//non default constructor
 //only need a weight and costPerOunce for this program's functionality
 	weight = 120.0;//default value of ounces
 	costPerOunce = 0.05; //default cost per ounce
-} 
-//rubric says to ensure weight and cost are not negative?
+}
+
+
+Package::Package(double w, double cost){//non default constructor
+	//only need a weight and costPerOunce for this program's functionality
+	if(w>=0){
+		weight = w;
+	} else
+		weight = 100;//default value of ounces
+	if(cost>=0){
+		costPerOunce=cost;
+	} else
+		costPerOunce = 0.05; //default cost per ounce
+}
 
 double Package:: calculateCost(){ //calculating cost
 	return ( (weight) * costPerOunce ); //if extra cost per ounce

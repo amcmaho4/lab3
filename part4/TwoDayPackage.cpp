@@ -14,7 +14,10 @@ TwoDayPackage:: TwoDayPackage(){ //default constructor
 	additCost = 5; //additional cost of 5 dollars
 
 }
-
+TwoDayPackage:: TwoDayPackage(double cost, double weight, double addit) : Package(cost, weight) { // calling the constructor for Package
+	additCost = addit; //non default value
+	
+}
 double TwoDayPackage:: calculateCost() {
 	// Package::CalculateCost calls base class calc cost function
 	return ( (Package::calculateCost()) + additCost); //adding set value
@@ -22,7 +25,6 @@ double TwoDayPackage:: calculateCost() {
 
 
 void TwoDayPackage::print(){
-	cout << "the additional cost of for twoday shipping is: "<< additCost<<endl;
-	cout << "The cost of shipping a two day package is: "<< calculateCost() <<endl;
+	cout << "Type: 2 day"<<endl<<"weight: "<< Package::getWeight()<<endl<<"cost: "<<calculateCost() <<endl;
 	cout<<endl;
 }
