@@ -18,6 +18,7 @@ class BankAccount{
 	
 public:
 	BankAccount(); //constructor
+	string getName(); //returns password
 private:
 	string name;
 	string socialSecurity;
