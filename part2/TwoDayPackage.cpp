@@ -1,4 +1,4 @@
-//Katie Quinn
+//Katie Quinn & Anna McMahon
 //CSE 20212 Lab 3
 //2-8-15
 //

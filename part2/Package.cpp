@@ -1,4 +1,4 @@
-//Katie Quinn
+//Katie Quinn & Anna McMahon
 //CSE20212 Lab 3
 //Prof Scott Emrich
 //2-7-15
