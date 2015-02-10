@@ -1,4 +1,4 @@
-//Katie Quinn
+//Katie Quinn & Anna McMahon
 //CSE20212 Lab 3
 //2-8-15
 //
@@ -14,7 +14,7 @@ OvernightPackage::OvernightPackage(){ //initialized with specific values
 	extraCostPerOunce = 0.05; //extra fee for overnight package
 }
 //non default constructor
-OvernightPackage::OvernightPackage(double cost, double weight, double extra) : Package(cost,weight){
+OvernightPackage::OvernightPackage(double cost, double weight, double extra) : Package(weight,cost){
 	extraCostPerOunce = extra;
 }
 

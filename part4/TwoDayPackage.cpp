@@ -1,4 +1,4 @@
-//Katie Quinn
+//Katie Quinn & Anna McMahon
 //CSE 20212 Lab 3
 //2-8-15
 //
@@ -14,7 +14,7 @@ TwoDayPackage:: TwoDayPackage(){ //default constructor
 	additCost = 5; //additional cost of 5 dollars
 
 }
-TwoDayPackage:: TwoDayPackage(double cost, double weight, double addit) : Package(cost, weight) { // calling the constructor for Package
+TwoDayPackage:: TwoDayPackage(double cost, double weight, double addit) : Package(weight,cost) { // calling the constructor for Package
 	additCost = addit; //non default value
 	
 }
