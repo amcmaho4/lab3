@@ -14,7 +14,8 @@ using namespace std;
 class OvernightPackage: public Package{ 
 //OvernightPackage is a derived class from Package
  public:
-	OvernightPackage(); //default constructor 
+	OvernightPackage(); //default constructor
+	OvernightPackage(double cost, double weight, double extra);
 	virtual double calculateCost(); //calculate package cost
 	virtual void print();
  private:

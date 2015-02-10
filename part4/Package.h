@@ -15,6 +15,7 @@ using namespace std;
 class Package{
  public:
 	Package(); //defualt constructor
+	Package(double w, double cost);
 	virtual double calculateCost(); //returns cost : cost per ounce * weight
 	virtual void print();
 	double getWeight();
