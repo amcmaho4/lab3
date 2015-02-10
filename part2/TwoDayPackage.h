@@ -7,13 +7,14 @@
 //
 #ifndef TWODAYPACKAGE_H
 #define TWODAYPACKAGE_H// only include once
-
-using namespace std;
 #include "Package.h" //include the base class
+using namespace std;
+
 
 class TwoDayPackage: public Package{//inherits from base class
  public:
-	TwoDayPackage();//non default constructor
+	TwoDayPackage();//default constructor
+	TwoDayPackage(double,double,double); //non default constructor
 	double calculateCost(); //adding additional cost
  private:
 	double additCost; //additional cost

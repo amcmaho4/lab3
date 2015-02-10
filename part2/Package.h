@@ -7,13 +7,13 @@
 //
 #ifndef PACKAGE_H //include header class once
 #define PACKAGE_H
-using namespace std;
 #include <string> //include the string class
-
+using namespace std;
 class Package{
  public:
-	Package(); //defualt constructor
-        double calculateCost(); //returns cost : cost per ounce * weight
+	Package(double, double); //non defualt constructor
+        Package();
+	double calculateCost(); //returns cost : cost per ounce * weight
  	double getWeight(); //returns weight
 private:
 	string sender_Name; //name of sender

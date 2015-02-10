@@ -12,6 +12,7 @@
 class OvernightPackage: public Package{ 
 //OvernightPackage is a derived class from Package
  public:
+	OvernightPackage(double,double,double);//nondefault constructor
 	OvernightPackage(); //default constructor 
 	double calculateCost(); //calculate package cost
  private:

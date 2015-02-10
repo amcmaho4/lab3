@@ -12,6 +12,11 @@ OvernightPackage::OvernightPackage(){ //initialized with specific values
 	extraCostPerOunce = 0.05; //extra fee for overnight package
 }
 
+//non default constructor
+OvernightPackage::OvernightPackage(double cost, double weight, double extra) : Package(cost,weight){
+	extraCostPerOunce = extra;
+}
+
 double OvernightPackage:: calculateCost(){
 //calculate cost function adds additional cost to cost per ounce to calculate 
 //total shipping cost, passes extra cost to the base class function
